@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19257616.svg)](https://doi.org/10.5281/zenodo.19257616)
+
 # AI-Newton-Rings-Lab
 
 This repository provides the reproducibility package for our manuscript on an AI-assisted Newton's rings undergraduate optics experiment. It is intended to support peer review, post-publication verification, and classroom reuse.
