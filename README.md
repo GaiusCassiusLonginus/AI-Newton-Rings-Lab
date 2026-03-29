@@ -63,3 +63,5 @@ Citation information will be added after the archival release is deposited in Ze
 This repository is released under the MIT License unless otherwise specified for individual files or datasets.
 
 Update for Zenodo sync
+
+This repository currently provides a minimal reproducibility package rather than a complete dataset release.
