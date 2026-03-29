@@ -1,0 +1,5 @@
+method,trial,ring_m,diameter_mm,d2_mm2,R_estimated_m,relative_error_percent
+manual,1,7,4.111,16.901,0.968,2.4
+manual,2,7,4.149,17.214,1.012,1.3
+image,1,6,3.921,15.374,1.039,4.7
+image,2,7,4.235,17.935,1.036,6.0
