@@ -1,67 +1,49 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19257616.svg)](https://doi.org/10.5281/zenodo.19257616)
+# AI-assisted Newton's rings laboratory
 
-# AI-Newton-Rings-Lab
+This repository is the public reproducibility package for the manuscript:
 
-This repository provides the reproducibility package for our manuscript on an AI-assisted Newton's rings undergraduate optics experiment. It is intended to support peer review, post-publication verification, and classroom reuse.
+> An AI-assisted Newton's rings laboratory for undergraduates: manual-first measurement, transparent feedback and guided inquiry design
 
-## Repository purpose
+It contains the aggregate questionnaire data, archived image examples, figure source panels, processing scripts, configuration notes and representative outputs needed to inspect the workflow reported in the paper.
 
-This repository is not only a software project. It is a paper-associated reproducibility package that contains the materials needed to understand, inspect, and reproduce the experimental workflow reported in the manuscript.
+## Repository map
 
-## Planned contents
+- `code/` figure-generation and robustness-audit scripts, with the source panels required by the figure script
+- `config/` acquisition and processing details
+- `data/` anonymised aggregate counts, archived fringe frames and provenance records
+- `docs/` scope, privacy and reproducibility notes
+- `results/` figures and robustness-audit output used in the manuscript
 
-- `data/`  
-  Raw fringe images, calibration images, and sample datasets used for analysis and demonstration.
+## Experimental setup
 
-- `code/`  
-  Image-processing and analysis scripts for extracting ring diameters and estimating the radius of curvature.
+- plano-convex lens with nominal curvature radius 1.0 m
+- teaching sodium lamp for the monochromatic measurements
+- WS2818-5050 RGB LED board for the colour-extension activity
+- Shanghai Optical Instrument Factory JCD3 measuring microscope
+- stock smartphone camera application, 1x main-camera setting, fixed bench support, digital zoom and beautification disabled
 
-- `config/`  
-  Experimental setup description, hardware information, acquisition conditions, and processing parameters.
+Xiaomi 14 was used during testing and development. The ten-acquisition comparison reported in the manuscript used a Redmi K60 Ultra with the fixed geometry described in `config/acquisition_and_processing.md`.
 
-- `docs/`  
-  Supporting documents for uncertainty analysis, AI-vs-manual comparison, teaching implementation, and assessment design.
+## Reproduce the supplied outputs
 
-- `results/`  
-  Example outputs, intermediate figures, processed tables, and reproducibility demonstrations.
+From the repository root:
 
-## Experimental setup summary
+```text
+python -m pip install -r requirements.txt
+python code/reproduce_figures.py
+python code/robustness_audit.py
+```
 
-The reproducibility package corresponds to the manuscript version using the following representative setup:
+`reproduce_figures.py` regenerates the Figure 5-7 panels from the retained source images. `robustness_audit.py` applies the brightness and Gaussian-blur perturbations described in the paper and writes a CSV and overlay image to `results/`.
 
-- Smartphone: Xiaomi 14 (2023 release), stock camera app only
-- Main monochromatic source: standard sodium lamp used in undergraduate teaching laboratories
-- RGB extension source: WS2818-5050 LED board
-- Lens: plano-convex lens, nominal radius of curvature 1.0 m
-- Measuring microscope: Shanghai Optical Instrument Factory JCD3 measuring microscope
+The scripts are transparent audit tools, not independent ground-truth validators. The radius matching audit does not compare fitted centres or ring identities and its search range depends on the radial estimate.
 
-## Reproducibility principles
+## Data and privacy
 
-To support reproducibility, this repository is being organized around the following principles:
+`data/questionnaire_counts.csv` contains only aggregate counts for the eight questionnaire items (`n = 54`). Individual responses, class metadata, student names and electronic student laboratory reports are not included. The reports are retained by the course instructor and can only be shared in anonymised form with appropriate permission.
 
-1. Raw data are preserved whenever possible.
-2. Calibration information is stored separately from processed results.
-3. Image-processing steps are documented and auditable.
-4. Manual and AI-assisted measurement routes can be compared.
-5. Uncertainty sources are explicitly described rather than hidden.
-
-## Intended use
-
-This repository is intended for:
-
-- journal reviewers and readers
-- instructors who want to adapt the experiment
-- students learning experimental optics and uncertainty analysis
-- researchers interested in AI-assisted laboratory instruction
-
-## Citation
-
-Citation information will be added after the archival release is deposited in Zenodo and a DOI is assigned.
+The complete ten-acquisition timing records, predictor training archive and full classroom application are outside this package. The manuscript identifies these limits and gives the corresponding author as the contact for additional records where sharing is permitted.
 
 ## License
 
-This repository is released under the MIT License unless otherwise specified for individual files or datasets.
-
-Update for Zenodo sync
-
-This repository currently provides a minimal reproducibility package rather than a complete dataset release.
+Code and documentation are released under the MIT License. Image and dataset reuse should preserve the manuscript citation and the provenance information in `data/image_provenance.json`.
