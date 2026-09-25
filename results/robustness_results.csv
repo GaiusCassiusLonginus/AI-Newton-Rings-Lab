@@ -1,0 +1,21 @@
+﻿image,condition,rings,matched,median_difference_percent,max_difference_percent
+raw_frame_01.jpg,unperturbed,5,1,2.5735294117647056,2.5735294117647056
+raw_frame_01.jpg,brightness 0.75,5,5,0.9174311926605505,2.564102564102564
+raw_frame_01.jpg,brightness 1.25,5,5,1.4705882352941175,2.564102564102564
+raw_frame_01.jpg,Gaussian blur sigma=1.5,5,5,2.7522935779816518,5.128205128205128
+raw_frame_01.jpg,Gaussian blur sigma=3.0,5,5,4.587155963302752,7.6923076923076925
+raw_frame_02.jpg,unperturbed,5,4,0.9271475976991685,1.6091971561826508
+raw_frame_02.jpg,brightness 0.75,5,4,0.4166666666666667,1.1494252873563218
+raw_frame_02.jpg,brightness 1.25,5,5,0.43478260869565216,1.7241379310344827
+raw_frame_02.jpg,Gaussian blur sigma=1.5,5,3,3.3333333333333335,4.597701149425287
+raw_frame_02.jpg,Gaussian blur sigma=3.0,4,2,3.8539553752535496,5.747126436781609
+raw_frame_03.jpg,unperturbed,1,0,nan,nan
+raw_frame_03.jpg,brightness 0.75,1,0,nan,nan
+raw_frame_03.jpg,brightness 1.25,1,1,0.0,0.0
+raw_frame_03.jpg,Gaussian blur sigma=1.5,3,0,nan,nan
+raw_frame_03.jpg,Gaussian blur sigma=3.0,3,0,nan,nan
+raw_frame_04.jpg,unperturbed,5,5,0.08403233119419642,0.3750038146972656
+raw_frame_04.jpg,brightness 0.75,5,5,0.0,0.0
+raw_frame_04.jpg,brightness 1.25,5,5,0.0,0.0
+raw_frame_04.jpg,Gaussian blur sigma=1.5,2,0,nan,nan
+raw_frame_04.jpg,Gaussian blur sigma=3.0,2,0,nan,nan
