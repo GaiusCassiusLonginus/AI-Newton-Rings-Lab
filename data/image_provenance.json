@@ -1,0 +1,139 @@
+{
+  "archive": "1117ppt.pptx",
+  "archive_sha256": "6ecb6154722d09e6599da43a4012c2ee1f04a4c8b964e2dff170b29df85a870f",
+  "panels": [
+    {
+      "figure": 5,
+      "row": 1,
+      "source_member": "ppt/media/image64.png",
+      "source_file": "fig5_source_1.png",
+      "source_size": [
+        609,
+        496
+      ],
+      "crop_xywh": [
+        56,
+        0,
+        496,
+        496
+      ],
+      "sha256": "6f272de0db0b185c816f71b6bb38c6ab236983d9254c7b5b2b76f1e0aec17824",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    },
+    {
+      "figure": 5,
+      "row": 2,
+      "source_member": "ppt/media/image67.png",
+      "source_file": "fig5_source_2.png",
+      "source_size": [
+        609,
+        496
+      ],
+      "crop_xywh": [
+        56,
+        0,
+        496,
+        496
+      ],
+      "sha256": "4eaf045425cde5140d065f7d9bf36fa9098403e0dc8cd5840aba634e9d12abc7",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    },
+    {
+      "figure": 5,
+      "row": 3,
+      "source_member": "ppt/media/image70.png",
+      "source_file": "fig5_source_3.png",
+      "source_size": [
+        602,
+        506
+      ],
+      "crop_xywh": [
+        48,
+        0,
+        506,
+        506
+      ],
+      "sha256": "bfcd3f936dfd4d97e0b269eb9c25a031380e6b83b455df8826b1342690e3a41b",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    },
+    {
+      "figure": 6,
+      "row": 1,
+      "source_member": "ppt/media/image73.jpeg",
+      "source_file": "fig6_source_1.jpeg",
+      "source_size": [
+        375,
+        317
+      ],
+      "crop_xywh": [
+        29,
+        0,
+        317,
+        317
+      ],
+      "sha256": "d696781f497f845101801e7e0edf8f96aa04231a5a78c2e767be36f48018e5a6",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    },
+    {
+      "figure": 6,
+      "row": 2,
+      "source_member": "ppt/media/image76.jpeg",
+      "source_file": "fig6_source_2.jpeg",
+      "source_size": [
+        336,
+        289
+      ],
+      "crop_xywh": [
+        23,
+        0,
+        289,
+        289
+      ],
+      "sha256": "c729dd114f14164d4954988e05a05e28fd963219ac766ddb70783b637f2ea3af",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    },
+    {
+      "figure": 6,
+      "row": 3,
+      "source_member": "ppt/media/image79.jpeg",
+      "source_file": "fig6_source_3.jpeg",
+      "source_size": [
+        340,
+        290
+      ],
+      "crop_xywh": [
+        25,
+        0,
+        290,
+        290
+      ],
+      "sha256": "d8d33300d069157c872760c50b76a6d337974f7a0f10bf4fab60859edd7b35b0",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    },
+    {
+      "figure": 6,
+      "row": 4,
+      "source_member": "ppt/media/image82.jpeg",
+      "source_file": "fig6_source_4.jpeg",
+      "source_size": [
+        377,
+        312
+      ],
+      "crop_xywh": [
+        32,
+        0,
+        312,
+        312
+      ],
+      "sha256": "57912e796b4d7de6fe92059f7ac6698416a763630bef1fed22e9fb23e72db141",
+      "operation": "centred square crop; equal x/y pixel scale; no anisotropic resampling",
+      "profile": "centre row of displayed crop; weighted greyscale / 255 (Figure 5) or RGB / 255 (Figure 6)"
+    }
+  ]
+}

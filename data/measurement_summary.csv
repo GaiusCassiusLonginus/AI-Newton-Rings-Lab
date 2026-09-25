@@ -1,0 +1,6 @@
+metric,ai_assisted_analysis,traditional_manual_method,unit,notes
+mean_absolute_error_in_R,0.0123,0.0198,m,ten-acquisition bench comparison; nominal R=1.0 m
+mean_absolute_error_relative_to_nominal_R,1.23,1.98,percent,ten-acquisition bench comparison
+standard_deviation_of_R,0.0147,0.0216,m,reported summary comparison
+time_for_one_ring_measurement,1.2,45,s,central values used for the reported time ratio
+calculation_time_per_dataset,15,300,s,central values used for the reported time ratio
