@@ -6,3 +6,5 @@
 - `robustness_overlay.png` shows the archived frames, selected minima and radial profiles.
 
 These outputs can be regenerated with the scripts in `code/`. The robustness audit checks stability relative to the unperturbed extraction and is not an independent accuracy validation.
+
+The files in `demo/` are historical outputs from an earlier ring-detection implementation. They are retained to document development and are not manuscript figures or evidence for the current numerical comparison.
