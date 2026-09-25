@@ -1,63 +1,24 @@
-# Experimental Setup
+# Experimental setup
 
-This document records the representative experimental configuration used in the manuscript-associated reproducibility package for the AI-assisted Newton's rings experiment.
+This document records the equipment roles in the manuscript-associated reproducibility package.
 
-## 1. Hardware and optical components
+## Reported ten-acquisition comparison
 
-### Smartphone
-- Model: Xiaomi 14
-- Release year: 2023
-- Manufacturer category: mid-to-high-end smartphone from a Chinese manufacturer
-- Camera app: stock/original system camera app only
-- Third-party camera apps: not used
+- smartphone: Redmi K60 Ultra, stock camera application, 1x main camera
+- support: rigid fixed bench geometry
+- monochromatic source: teaching sodium lamp, treated operationally as the sodium D doublet near 589.0 and 589.6 nm
+- optical element: plano-convex lens with nominal curvature radius 1.0 m
+- manual instrument: Shanghai Optical Instrument Factory JCD3 measuring microscope
+- calibration reticle: 0.1 mm spacing, recorded at the same focal height as the air film
 
-### Light sources
-- Main monochromatic source: standard sodium lamp commonly used in undergraduate teaching laboratories
-- Extension source for mixed-colour exploration: RGB LED board
-- LED type: WS2818-5050
+Digital zoom and beautification filters were disabled. The source, lens-plate contact state and camera position were held fixed during the reported repeated acquisitions.
 
-### Optical element
-- Lens type: plano-convex lens
-- Nominal radius of curvature: 1.0 m
+## Additional testing and development
 
-### Reading instrument for manual baseline method
-- Instrument: measuring microscope
-- Model: JCD3
-- Manufacturer: Shanghai Optical Instrument Factory
+Xiaomi 14 was also used during testing and development. Results from that device are not represented as the ten-acquisition benchmark reported in the manuscript.
 
-## 2. Imaging conditions
+The RGB extension activity used a WS2818-5050 LED board. The retained Figure 5 and Figure 6 source panels are documented separately in `data/image_provenance.json`.
 
-- The smartphone was used with the stock camera app only.
-- No beauty filter, enhancement filter, or third-party computational photography app was used.
-- Digital zoom was avoided during image acquisition whenever possible.
-- The phone was positioned above the eyepiece using a simple clamp or stable support to reduce tilt and hand motion.
-- Calibration images and fringe images were recorded under comparable focal conditions.
+## Reproducibility scope
 
-## 3. Recommended acquisition practice
-
-- Ensure that the ring pattern is clearly visible before capture.
-- Avoid obvious motion blur.
-- Avoid clipped highlights and severe underexposure.
-- Keep the optical axis approximately aligned with the eyepiece axis.
-- Record raw fringe images before any later processing.
-- Archive calibration images separately from processed outputs.
-
-## 4. Image-analysis main workflow
-
-The main workflow follows the manuscript protocol and consists of:
-
-1. image capture
-2. grayscale conversion
-3. contrast normalization
-4. approximate center detection
-5. radial intensity profiling
-6. fringe minimum detection
-7. boundary refinement
-8. circle fitting
-9. pixel-to-length calibration
-10. diameter export
-11. calculation of the radius of curvature from the ring-diameter relation
-
-## 5. Reproducibility note
-
-This setup description is intended to support reproducibility of the reported workflow. Small changes in smartphone imaging behaviour, illumination stability, focus, alignment, and calibration may affect the extracted ring diameters and the final estimated radius of curvature. Therefore, raw images, calibration records, and processing parameters should be archived together whenever possible.
+Changes in smartphone processing, focus, alignment, illumination and calibration can affect extracted ring diameters. Raw frames, calibration records and processing settings should therefore be retained together. The supplied audit checks the stability of extracted radii under stated perturbations; it does not provide independent centre or ring-identity ground truth.
