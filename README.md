@@ -38,6 +38,10 @@ python code/robustness_audit.py
 
 The scripts are transparent audit tools, not independent ground-truth validators. The radius matching audit does not compare fitted centres or ring identities and its search range depends on the radial estimate.
 
+## Historical development material
+
+The repository also retains early measurement tools, acquisition examples and demonstration outputs from the development of the laboratory workflow. Their status is documented in the README files within `code/`, `data/` and `results/`. These materials are preserved for methodological context but are not inputs to the figures, questionnaire results or numerical comparisons reported in the current manuscript.
+
 ## Data and privacy
 
 `data/questionnaire_counts.csv` contains only aggregate counts for the eight questionnaire items (`n = 54`). Individual responses, class metadata, student names and electronic student laboratory reports are not included. The reports are retained by the course instructor and can only be shared in anonymised form with appropriate permission.
