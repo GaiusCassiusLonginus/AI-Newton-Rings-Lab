@@ -1,12 +1,8 @@
-# Documentation description
+# Documentation
 
-This folder contains supporting documents related to the reproducibility package and teaching implementation.
+- `reproducibility_notes.md` defines the checks supported by the public package and its limits.
+- `privacy_and_scope.md` describes the exclusion of individual student records and course metadata.
+- `teaching_implementation.md` describes the manual-first teaching sequence and assessment framework.
+- `uncertainty_analysis.md` summarises uncertainty sources in the manual and image-assisted routes.
 
-Typical contents may include:
-
-- uncertainty notes
-- teaching workflow materials
-- assessment design
-- implementation guidance
-
-At the current stage, this folder serves as a placeholder for supporting documents that will be expanded in future updates.
+The current manuscript remains the authoritative source for reported numerical claims and limitations.
