@@ -1,29 +1,11 @@
-# Code description
+# Code
 
-This folder contains the main scripts used in the reproducibility package.
+This directory contains the scripts associated with the manuscript workflow.
 
-## auto_ring_detection.py
+- `reproduce_figures.py` regenerates Figures 5-7 from the retained source panels and aggregate questionnaire counts. Outputs are written to `code/generated/`.
+- `robustness_audit.py` reruns the archived-frame brightness and blur audit. Outputs are written to `results/`.
+- `auto_ring_detection.py` is an earlier automatic ring-detection implementation retained for inspection.
+- `manual_three_point_circle.py` is the manual three-point circle comparison tool.
+- `prediction_gui.py` is a research prototype for prediction and data validation. It is not used as ground truth or for grading, and its training archive is not included in this public package.
 
-Automatic ring-detection and measurement script.
-
-Main functions include:
-
-- crosshair centre detection
-- radial intensity analysis
-- ring boundary extraction
-- annotated output generation
-
-## manual_three_point_circle.py
-
-Manual measurement tool for baseline comparison.
-
-Main functions include:
-
-- three-point circle fitting
-- two-point distance measurement
-
-## prediction_gui.py
-
-Prototype GUI for prediction and data validation.
-
-This module is currently provided as a research prototype and may be further refined in future updates.
+Install the dependencies required by the two reproducibility scripts from the repository root with `python -m pip install -r requirements.txt`.
