@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this reproducibility package when using these materials."
+type: software
+title: AI-Newton-Rings-Lab
+authors:
+  - family-names: Yang
+    given-names: Xiexiang
+version: 2.0.0
+date-released: 2026-09-25
+url: "https://github.com/GaiusCassiusLonginus/AI-Newton-Rings-Lab"
+repository-code: "https://github.com/GaiusCassiusLonginus/AI-Newton-Rings-Lab"

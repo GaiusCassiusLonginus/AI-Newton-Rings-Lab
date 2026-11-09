@@ -6,6 +6,16 @@ This repository is the public reproducibility package for the manuscript:
 
 It contains the aggregate questionnaire data, archived image examples, figure source panels, processing scripts, configuration notes and representative outputs needed to inspect the workflow reported in the paper.
 
+## Version and citation
+
+The revised manuscript package is available as [v2.0.0](https://github.com/GaiusCassiusLonginus/AI-Newton-Rings-Lab/releases/tag/v2.0.0), released on 25 September 2026. Use this release when reproducing the results associated with the revised manuscript. Subsequent documentation updates on `main` do not change that archived release.
+
+Suggested citation:
+
+> Yang X 2026 AI-Newton-Rings-Lab (version 2.0.0) GitHub https://github.com/GaiusCassiusLonginus/AI-Newton-Rings-Lab/releases/tag/v2.0.0
+
+Machine-readable citation details are provided in [CITATION.cff](CITATION.cff).
+
 ## Repository map
 
 - `code/` figure-generation and robustness-audit scripts, with the source panels required by the figure script
@@ -37,6 +47,8 @@ python code/robustness_audit.py
 `reproduce_figures.py` regenerates the Figure 5-7 panels from the retained source images. `robustness_audit.py` applies the brightness and Gaussian-blur perturbations described in the paper and writes a CSV and overlay image to `results/`.
 
 The scripts are transparent audit tools, not independent ground-truth validators. The radius matching audit does not compare fitted centres or ring identities and its search range depends on the radial estimate.
+
+See the [reproducibility notes](docs/reproducibility_notes.md) for the environment and results of the November 2026 reproduction check. Figure outputs are generated in `code/generated/`; robustness outputs are written to `results/`.
 
 ## Historical development material
 
